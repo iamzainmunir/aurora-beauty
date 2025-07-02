@@ -15,7 +15,7 @@ const SocialChatButtons: React.FC = () => {
   const toggleButtons = () => setIsOpen(!isOpen);
 
   return (
-    <div className="fixed bottom-20 right-4 z-50 flex flex-col items-end gap-3">
+    <div className="fixed bottom-20 right-7 z-50 flex flex-col items-end gap-3">
       {/* Social Icons */}
       {isOpen && (
         <div className="flex flex-col gap-3 items-end">
@@ -57,11 +57,13 @@ const SocialChatButtons: React.FC = () => {
       {/* Toggle Button */}
       <button
         onClick={toggleButtons}
-        className="bg-gray-800 text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform"
+        style={{ backgroundColor: '#DF6852' }}
+        className="text-white p-3 rounded-full shadow-lg hover:scale-110 transition-transform"
         aria-label="Toggle Chat Menu"
       >
         <FaComments size={24} />
       </button>
+
     </div>
   );
 };
