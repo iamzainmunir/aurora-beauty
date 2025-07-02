@@ -4,6 +4,8 @@ import Header from '@/app/components/Layout/Header'
 import Footer from '@/app/components/Layout/Footer'
 import ScrollToTop from '@/app/components/ScrollToTop'
 import SmoothScroll from './SmoothScroll'
+import SocialChatButtons from './components/SocialChatButtons';
+
 const font = Poppins({
   subsets: ['latin'],
   weight: ['400', '500', '600', '700'],
@@ -20,6 +22,7 @@ export default function RootLayout({
         <Header />
         <SmoothScroll>
         {children}
+        <SocialChatButtons />
         <ScrollToTop />
         </SmoothScroll>
         <Footer />
